@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Bhattarai - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/IMG_1277-removebg-preview.png">
+    <link rel="stylesheet" href="style.css";
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-opacity-90 backdrop-filter backdrop-blur-lg fixed w-full z-10 transition-colors duration-300">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary hover-opacity">Piyush Bhattarai</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact-form" class="nav-link">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div id="theme-colors" class="flex space-x-2">
+                        <button class="color-btn bg-blue-500" data-color="blue"></button>
+                        <button class="color-btn bg-green-500" data-color="green"></button>
+                        <button class="color-btn bg-red-500" data-color="red"></button>
+                        <button class="color-btn bg-purple-500" data-color="purple"></button>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-full bg-accent hover-opacity">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10"></div>
+            
+            <!-- Background Blobs -->
+    <div class="absolute inset-0">
+        <div class="absolute top-10 left-10 w-48 h-48 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 right-20 w-64 h-64 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-20 left-20 w-56 h-56 bg-accent rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+        
+            <div class="relative  text-center px-4">
+                <h1 class="text-6xl md:text-7xl font-extrabold mb-4 text-primary animate-fade-in-up">Welcome to My Portfolio</h1>
+                <p class="text-lg md:text-xl mb-8 text-text animate-fade-in-up animation-delay-300">I create modern web solutions that inspire and engage.</p>
+                <div class="space-x-4">
+                    <a href="#projects" class="px-6 py-3 rounded-full text-white bg-accent hover:bg-opacity-80 transition duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-project-diagram mr-2"></i>View Projects
+                    </a>
+                    <a href="#contact-form" class="px-6 py-3 rounded-full text-primary bg-background border border-primary hover:bg-primary hover:text-white transition duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-envelope mr-2"></i>Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="../image/IMG_1277.jpg" alt="" class="rounded-full w-64 h-64 object-cover mx-auto">                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg mb-4 text-text">Hello! I'm a passionate Full Stack Developer with a keen eye for design. I love creating beautiful, functional, and user-friendly websites and applications.</p>
+                        <p class="text-lg text-text">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good book.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 bg-card">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Experience & Education</h2>
+                <div class="relative">
+                    <div class="timeline-item pl-8 pb-8 relative">
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Developer at TechGeneration</h3>
+                        <p class="text-sm mb-2 text-text">2022 - Present</p>
+                        <p class="text-text">Led a team of developers in creating innovative web applications.</p>
+                    </div>
+                    <div class="timeline-item pl-8 pb-8 relative">
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Diploma in Computer Programming</h3>
+                        <p class="text-sm mb-2 text-text">2022 - 2025</p>
+                        <p class="text-text">Niagara college Toronto</p>
+                    </div>
+                    <div class="timeline-item pl-8 pb-8 relative">
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Diploma in Computer Science</h3>
+                        <p class="text-sm mb-2 text-text">2020 - 2022</p>
+                        <p class="text-text">Xavier International College, Major in Software Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-item rounded-lg overflow-hidden shadow-md bg-card">
+                        <img src="https://via.placeholder.com/400x300.png?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2 text-primary">Web Application</h3>
+                            <p class="mb-4 text-text">A full-stack Web application with Angular and Node.js.</p>
+                            <button class="project-details px-4 py-2 rounded-full bg-accent" data-project="1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-item rounded-lg overflow-hidden shadow-md bg-card">
+                        <img src="https://via.placeholder.com/400x300.png?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2 text-primary">Task Management App</h3>
+                            <p class="mb-4 text-text">A mobile app for task management built with React Native.</p>
+                            <button class="project-details px-4 py-2 rounded-full bg-accent" data-project="2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-item rounded-lg overflow-hidden shadow-md bg-card">
+                        <img src="https://via.placeholder.com/400x300.png?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2 text-primary">Data Visualization Dashboard</h3>
+                            <p class="mb-4 text-text">An interactive dashboard for data analysis using D3.js.</p>
+                            <button class="project-details px-4 py-2 rounded-full bg-accent" data-project="3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-card">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Skills</h2>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full md:w-1/2 p-4">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                    <div class="w-full md:w-1/2 p-4">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Technical Skills</h3>
+                        <ul class="list-disc list-inside text-text">
+                            <li>JavaScript (ES6+)</li>
+                            <li>Angular</li>
+                            <li>Node.js & Express</li>
+                            <li>SQL & NoSQL Databases</li>
+                            <li>Java Spring boot</li>
+                            <li>RESTful API Design</li>
+                            <li>Git & Version Control</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Testimonials</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 rounded-lg shadow-md bg-card">
+                        <p class="mb-4 text-text">"Piyush Bhattarai is an exceptional developer. His attention to detail and problem-solving skills are impressive."</p>
+                        <p class="font-bold text-secondary">- Prajwal Newpane, CEO of TechCorp</p>
+                    </div>
+                    <div class="p-6 rounded-lg shadow-md bg-card">
+                        <p class="mb-4 text-text">"Working with Piyush Bhattarai was a pleasure. His delivered high-quality work on time and exceeded our expectations."</p>
+                        <p class="font-bold text-secondary">- Tausif Wosta, Project Manager</p>
+                    </div>
+                    <div class="p-6 rounded-lg shadow-md bg-card">
+                        <p class="mb-4 text-text">"Piyush Bhattarai's expertise in both frontend and backend development made our project a success."</p>
+                        <p class="font-bold text-secondary">- Suraj Poudel, Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="py-20 bg-card">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Latest Blog Posts</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="rounded-lg overflow-hidden shadow-md bg-card">
+                        <img src="https://via.placeholder.com/400x300.png?text=Blog+Post+1" alt="Blog Post 1" class="w-full h-48 object-cover">                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-primary">10 Tips for Better Code</h3>
+                            <p class="mb-4 text-text">Learn how to write cleaner, more efficient code with these 10 essential tips.</p>
+                            <a href="#" class="text-sm font-bold text-accent">Read More</a>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-md bg-card">
+                        <img src="https://via.placeholder.com/400x300.png?text=Blog+Post+2" alt="Blog Post 2" class="w-full h-48 object-cover">                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-primary">The Future of Web Development</h3>
+                            <p class="mb-4 text-text">Explore emerging trends and technologies shaping the future of web development.</p>
+                            <a href="#" class="text-sm font-bold text-accent">Read More</a>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-md bg-card">
+                        <img src="https://via.placeholder.com/400x300.png?text=Blog+Post+3" alt="Blog Post 3" class="w-full h-48 object-cover">                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-primary">Mastering Angular</h3>
+                            <p class="mb-4 text-text">A comprehensive guide to understanding and using Angular effectively.</p>
+                            <a href="#" class="text-sm font-bold text-accent">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Get in Touch</h2>
+                <form class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block mb-2 text-text">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md bg-card text-text" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block mb-2 text-text">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md bg-card text-text" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block mb-2 text-text">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-md bg-card text-text" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-4 py-2 rounded-md text-white bg-accent">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-6 text-center bg-card">
+        <p class="text-text">&copy; 2024 Piyush Bhattarai. All rights reserved.</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" target="_blank"  class="text-2xl text-primary"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"  class="text-2xl text-primary"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"  class="text-2xl text-primary"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/piyushbhattarai_/" target="_blank" class="text-2xl text-primary"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+        <div class="bg-card p-8 rounded-lg max-w-2xl w-full">
+            <h3 id="modal-title" class="text-2xl font-bold mb-4 text-primary"></h3>
+            <p id="modal-description" class="mb-4 text-text"></p>
+            <div id="modal-tech" class="mb-4 text-text"></div>
+            <button id="close-modal" class="px-4 py-2 bg-accent text-white rounded-md">Close</button>
+        </div>
+    </div>
+
+    <!-- Email  Modal -->
+
+    <!-- Success Modal -->
+<div id="success-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white p-6 rounded-md shadow-md text-center">
+        <h3 class="text-xl font-bold mb-4">Success</h3>
+        <p>Your message was sent successfully!</p>
+        <button id="close-success-modal" class="mt-4 px-4 py-2 bg-green-500 text-white rounded-md">Close</button>
+    </div>
+</div>
+
+<!-- Error Modal -->
+<div id="error-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white p-6 rounded-md shadow-md text-center">
+        <h3 class="text-xl font-bold mb-4">Error</h3>
+        <p>There was an error sending your message.</p>
+        <button id="close-error-modal" class="mt-4 px-4 py-2 bg-red-500 text-white rounded-md">Close</button>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
