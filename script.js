@@ -198,7 +198,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     };
 
     // Make the POST request to your Spring Boot API
-    fetch('http://localhost:8080/api/contact/send', {
+    fetch('https://sendemail-portfolio-1.onrender.com/api/contact/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
